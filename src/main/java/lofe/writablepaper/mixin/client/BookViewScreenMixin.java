@@ -1,5 +1,6 @@
 package lofe.writablepaper.mixin.client;
 
+import lofe.writablepaper.client.PaperViewScreen;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.inventory.BookViewScreen;
@@ -41,6 +42,8 @@ public abstract class BookViewScreenMixin extends Screen {
 
     @Inject(method = "render", at = {@At(value = "HEAD")}, cancellable = true)
     public void render(GuiGraphics guiGraphics, int x, int y, float p_282251_, CallbackInfo ci) {
+        if(!(((BookViewScreen) (Object) this) instanceof PaperViewScreen)) return;
+
         ci.cancel();
 
         super.render(guiGraphics, x, y, p_282251_);
