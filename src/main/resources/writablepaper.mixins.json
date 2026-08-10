@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "lofe.writablepaper.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ServerGamePacketListenerImplMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "client.BookEditScreenMixin",
+    "client.BookViewScreenMixin",
+    "client.ClientPacketListenerMixin"
+  ]
+}

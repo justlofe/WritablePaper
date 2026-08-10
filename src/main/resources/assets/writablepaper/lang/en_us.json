@@ -1,0 +1,8 @@
+{
+  "item.writablepaper.writable_paper": "Paper and Quill",
+  "item.writablepaper.written_paper": "Paper",
+  "itemGroup.writablepaper": "WritablePaper",
+
+  "paper.editTitle": "Enter Paper Title:",
+  "paper.finalizeWarning": "Note! When you sign the paper, it will no longer be editable."
+}
