@@ -1,6 +1,6 @@
 {
-  "item.writablepaper.writable_paper": "Paper and Quill",
-  "item.writablepaper.written_paper": "Paper",
+  "item.writable_paper.writable_paper": "Paper and Quill",
+  "item.writable_paper.written_paper": "Paper",
   "itemGroup.writablepaper": "Writable Paper",
 
   "paper.editTitle": "Enter Paper Title:",

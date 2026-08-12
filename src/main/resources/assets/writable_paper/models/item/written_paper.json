@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "writablepaper:item/written_paper"
+    "layer0": "writable_paper:item/written_paper"
   }
 }

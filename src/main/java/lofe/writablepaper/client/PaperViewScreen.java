@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 
 public final class PaperViewScreen extends BookViewScreen {
 
-    public static final ResourceLocation PAPER_LOCATION = ResourceLocation.fromNamespaceAndPath("writablepaper", "textures/gui/paper.png");
+    public static final ResourceLocation PAPER_LOCATION = ResourceLocation.fromNamespaceAndPath("writable_paper", "textures/gui/paper.png");
 
     public PaperViewScreen(BookAccess bookAccess) {
         super(bookAccess);
