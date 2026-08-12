@@ -18,7 +18,7 @@ import org.slf4j.Logger;
 @Mod(WritablePaper.MODID)
 public final class WritablePaper {
 
-    public static final String MODID = "writablepaper";
+    public static final String MODID = "writable_paper";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
