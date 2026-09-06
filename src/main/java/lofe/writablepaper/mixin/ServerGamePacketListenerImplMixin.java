@@ -26,10 +26,8 @@ public abstract class ServerGamePacketListenerImplMixin {
     private void signBook(FilteredText title, List<FilteredText> pages, int index) {
         ServerGamePacketListenerImpl object = (ServerGamePacketListenerImpl) (Object) this;
 
-        System.out.println("In mixin!");
         ItemStack stack = object.player.getInventory().getItem(index);
         if (stack.is(Items.WRITABLE_BOOK) || stack.is(WritablePaper.WRITABLE_PAPER.get())) {
-            System.out.println("Passed check!");
             ItemStack newStack = stack.transmuteCopy(stack.is(Items.WRITABLE_BOOK) ? Items.WRITTEN_BOOK : WritablePaper.WRITTEN_PAPER.get());
             newStack.remove(DataComponents.WRITABLE_BOOK_CONTENT);
             List<Filterable<Component>> list = pages.stream()
